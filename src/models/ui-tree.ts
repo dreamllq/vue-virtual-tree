@@ -1,6 +1,6 @@
 import Tree from './tree';
 import { makeNode, makeChildren } from '../utils/make-ui-node';
-import EventEmitter from 'events';
+import EventEmitter from 'eventemitter3';
 import Storage from './storage';
 import { intersection, xor } from 'lodash';
 import { TreeOptions, KeyType } from './ui-tree.type';
