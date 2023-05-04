@@ -1,7 +1,7 @@
 {
   "name": "lc-vue-virtual-tree",
   "description": "高性能树",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "main": "./dist/lc-vue-virtual-tree.umd.cjs",
   "module": "./dist/lc-vue-virtual-tree.js",
@@ -68,7 +68,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git + https://github.com/dreamllq/vue-virtual-tree.git/"
   },
   "keywords": [
     "vue",

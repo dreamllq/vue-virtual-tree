@@ -30,7 +30,7 @@ export default defineConfig({
         '@vueuse/core',
         'vue-virtual-scroller',
         'lc-vue-text-tip',
-        'events'
+        'eventemitter3'
       ],
       output: {
         // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
@@ -43,7 +43,7 @@ export default defineConfig({
           '@vueuse/core': '@vueuse/core',
           'vue-virtual-scroller': 'vue-virtual-scroller',
           'lc-vue-text-tip': 'lc-vue-text-tip',
-          'events': 'events'
+          'eventemitter3': 'eventemitter3'
         },
         exports: 'named'
       }
