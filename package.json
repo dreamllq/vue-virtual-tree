@@ -1,7 +1,7 @@
 {
   "name": "lc-vue-virtual-tree",
   "description": "高性能树",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "./dist/lc-vue-virtual-tree.umd.cjs",
   "module": "./dist/lc-vue-virtual-tree.js",
