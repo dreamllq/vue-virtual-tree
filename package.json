@@ -1,0 +1,76 @@
+{
+  "name": "lc-vue-virtual-tree",
+  "description": "模板",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/lc-vue-virtual-tree.umd.cjs",
+  "module": "./dist/lc-vue-virtual-tree.js",
+  "exports": {
+    ".": {
+      "import": "./dist/lc-vue-virtual-tree.js",
+      "require": "./dist/lc-vue-virtual-tree.umd.cjs"
+    }
+  },
+  "files": [
+    "/dist",
+    "/docs/.vitepress/dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "npm run docs:dev",
+    "build": "vue-tsc && vite build && vue-tsc",
+    "preview": "vite preview",
+    "postdoc": "npm run docs:build && git add . && git commit -m \"feat: change doc\" && git push",
+    "postversion": "git push && git push --tags && npm run build && npm publish --registry=https://registry.npmjs.org/",
+    "test": "jest",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.194",
+    "@types/uuid": "^9.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "@vueuse/core": "^10.1.0",
+    "element-plus": "^2.3.4",
+    "eslint": "^8.39.0",
+    "eslint-plugin-vue": "^9.11.0",
+    "events": "^3.3.0",
+    "jest": "^29.5.0",
+    "lc-vue-text-tip": "^1.1.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "rxjs": "^7.8.1",
+    "sass": "^1.62.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2",
+    "uuid": "^9.0.0",
+    "vite": "^4.3.2",
+    "vite-plugin-css-injected-by-js": "^3.1.0",
+    "vitepress": "^1.0.0-alpha.74",
+    "vue": "^3.2.47",
+    "vue-tsc": "^1.4.2",
+    "vue-virtual-scroller": "^2.0.0-beta.8"
+  },
+  "peerDependencies": {
+    "lc-vue-text-tip": "> 1.1.0",
+    "vue": "3.x",
+    "vue-virtual-scroller": "2.x",
+    "events": "3.x"
+  },
+  "author": {
+    "name": "lvliqi",
+    "email": "lvliqi_d@163.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "vue",
+    "vue3"
+  ]
+}

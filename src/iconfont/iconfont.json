@@ -1,0 +1,51 @@
+{
+  "id": "4049479",
+  "name": "v-tree",
+  "font_family": "iconfont",
+  "css_prefix_text": "vtree-icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4325757",
+      "name": "icon_loading",
+      "font_class": "loading",
+      "unicode": "eb80",
+      "unicode_decimal": 60288
+    },
+    {
+      "icon_id": "4765972",
+      "name": "minus-square",
+      "font_class": "expanded",
+      "unicode": "e796",
+      "unicode_decimal": 59286
+    },
+    {
+      "icon_id": "4765973",
+      "name": "plus-square",
+      "font_class": "open",
+      "unicode": "e797",
+      "unicode_decimal": 59287
+    },
+    {
+      "icon_id": "4766265",
+      "name": "border",
+      "font_class": "unchecked",
+      "unicode": "e7a9",
+      "unicode_decimal": 59305
+    },
+    {
+      "icon_id": "4936529",
+      "name": "check-square-fill",
+      "font_class": "checked",
+      "unicode": "e84b",
+      "unicode_decimal": 59467
+    },
+    {
+      "icon_id": "4936531",
+      "name": "minus-square-fill",
+      "font_class": "indeterminate",
+      "unicode": "e84c",
+      "unicode_decimal": 59468
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+@import './style/vars.scss';
+
+
+// $--tree-node-select-btn-is-selected-background-color: $color-brand1-3;
+// $--tree-node-select-btn-is-selected-color: $color-white;
+// $--tree-node-expand-btn-is-expanded-selected-color: $color-white;
+// $--tree-node-checkbox-btn-is-checked-selected-background-color: $color-white;
+// $--tree-node-checkbox-btn-is-checked-selected-after-border-color: $color-brand1-3;
+// $--tree-node-checkbox-btn-is-indeterminate-selected-background-color: $color-white;
+// $--tree-node-checkbox-btn-is-indeterminate-selected-before-background-color: $color-brand1-3;
+// $--tree-node-checkbox-btn-selected-border-color: $color-brand1-3;
+
+.ui-tree-scroller {
+  // height: 100%;
+
+  .vue-recycle-scroller__item-view.hover {
+    background-color: #F5F6F8;
+
+    .tree-item--suffix {
+      background-color: #F5F6F8;
+    }
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .cursor-not-allowed {
+    cursor: not-allowed
+  }
+
+  .tree_ui-node {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px;
+    border-radius: 4px;
+
+    &.is-selected {
+      background-color: #F5F6F8;
+
+      .tree-item--suffix {
+        background-color: #F5F6F8;
+      }
+
+      .expand-btn {
+        color: #999;
+
+        &.is-expanded {
+          color: #999;
+        }
+      }
+    }
+
+    .deep {
+      display: flex;
+
+      .deep-item {
+        width: 16px;
+        margin-right: 8px;
+      }
+    }
+
+    .check {
+      width: 16px;
+      height: 32px;
+      margin-right: 8px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .expand {
+      width: 16px;
+      height: 32px;
+      line-height: 32px;
+      margin-right: 8px;
+      text-align: center;
+    }
+
+    .space {
+      flex: 1;
+
+      &.selectable {
+        cursor: pointer;
+
+        &.is-disabled {
+          cursor: not-allowed;
+        }
+      }
+
+      &.is-disabled {
+        cursor: not-allowed;
+      }
+    }
+
+    .title {
+      flex: 1;
+      overflow: hidden;
+
+      &.selectable {
+        &.is-disabled {
+          .select-btn {
+            cursor: not-allowed;
+          }
+        }
+
+        .select-btn {
+          cursor: pointer;
+        }
+      }
+
+      &.is-disabled {
+        .select-btn {
+          cursor: not-allowed;
+        }
+      }
+
+      .select-btn {
+        cursor: default;
+      }
+    }
+
+    .suffix {
+      padding-left: 8px;
+    }
+
+    .deep,
+    .check,
+    .expand,
+    .prefix,
+    .suffix {
+      flex: none;
+    }
+  }
+
+  .expand-btn {
+    font-size: 16px;
+    line-height: 32px;
+    height: 32px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+    display: block;
+    width: 16px;
+    display: block;
+
+    &.is-loading {
+      cursor: not-allowed;
+      font-size: $--tree-node-expand-btn-loading-font-size;
+    }
+
+    &.is-expanded {
+      color: #999;
+    }
+  }
+
+  .checkbox-btn {
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: #014996;
+    cursor: pointer;
+    display: block;
+
+    &.is-disabled {
+      cursor: not-allowed;
+      color: #80A4CA;
+    }
+
+    &.is-checked {
+      color: #014996;
+    }
+
+    &.is-indeterminate {
+      color: #014996;
+    }
+  }
+
+  .select-btn {
+    color: #333;
+    font-size: 14px;
+    line-height: 32px;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+
+    &.is-selected {
+      border-radius: 4px;
+      color: #014996;
+    }
+
+    &.is-disabled {
+      cursor: not-allowed;
+      color: #999;
+    }
+  }
+}
