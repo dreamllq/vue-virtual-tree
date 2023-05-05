@@ -17,7 +17,7 @@ export default defineConfig({
     lib: {
       entry: 'src/index.ts',
       name: 'LcVueVirtualTree',
-      fileName: 'lc-vue-virtual-tree'
+      fileName: 'index'
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
