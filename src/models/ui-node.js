@@ -77,6 +77,11 @@ class UINode extends Node {
     this.selected = !!selected;
 
     if (this.selected === true) {
+      const keys = this.selectedKeyStorage.keys();
+      keys.forEach((key) => {
+        const node = this.selectedKeyStorage.getItem(key);
+        node.setSelected(false);
+      });  
       this.selectedKeyStorage.setItem(this.key, this);
     } else {
       this.selectedKeyStorage.removeItem(this.key);

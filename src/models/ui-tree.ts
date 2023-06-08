@@ -189,7 +189,7 @@ export class UITree extends Tree {
   async reload(key:KeyType) {
     const node = await this.getNodeByKey(key);
     if (node) {
-      const selectedNode = await this.getSelectedNode();
+      let selectedNode = await this.getSelectedNode();
       node.resetChildren();
       if (node.expanded === true) {
         await this.expand(key, false);
@@ -197,13 +197,11 @@ export class UITree extends Tree {
       await this.expand(key, true);
 
       if (selectedNode) {
-        const selectedKey = selectedNode.key;
+        let selectedKey = selectedNode.key;
 
-        const newSelectedNode = await this.getNodeByKey(selectedKey);
+        let newSelectedNode = await this.getNodeByKey(selectedKey);
         if (newSelectedNode) {
-          if (newSelectedNode.selected === false) {
-            newSelectedNode.select(true);
-          }
+          newSelectedNode.select(true);
         } else {
           node.select(true);
           this.emitSelectedChange(node.key);
