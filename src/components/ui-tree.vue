@@ -5,7 +5,7 @@
     :items='flat'
     :item-size='32'
     key-field='key'
-    :buffer='200'
+    page-mode
     :style='{minWidth: minWidth}'
   >
     <template #default='{item, index}'>

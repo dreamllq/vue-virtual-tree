@@ -120,8 +120,10 @@ export default {
         @load="onLoad"
         >
           <template #suffix="{node}">
-            <el-button type="primary" link icon="aps-icon-edit"></el-button>
-            <el-button type="primary" link icon="aps-icon-delete"></el-button>
+            <el-button type="primary" link>1</el-button>
+            <el-button type="primary" link>2</el-button>
+            <el-button type="primary" link>2</el-button>
+            <el-button type="primary" link>2</el-button>
           </template>
           <template #title-suffix>
             <i class="aps-icon-edit"></i>
